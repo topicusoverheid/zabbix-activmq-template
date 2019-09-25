@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.4</version>
-    <date>2017-12-05T10:31:57Z</date>
+    <version>4.2</version>
+    <date>2019-09-25T11:16:01Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -22,7 +22,7 @@
                     <name>Brokers</name>
                 </application>
                 <application>
-                    <name>Destinations</name>
+                    <name>Queues</name>
                 </application>
             </applications>
             <items/>
@@ -60,7 +60,7 @@
                     <description/>
                     <item_prototypes>
                         <item_prototype>
-                            <name>MemoryLimit for {#JMXVALUE}</name>
+                            <name>MemoryLimit for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -98,11 +98,29 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>MemoryPercentUsage for {#JMXVALUE}</name>
+                            <name>MemoryPercentUsage for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -140,11 +158,29 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>StoreLimit for {#JMXVALUE}</name>
+                            <name>StoreLimit for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -182,11 +218,29 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>StorePercentUsage for {#JMXVALUE}</name>
+                            <name>StorePercentUsage for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -224,11 +278,29 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>TempLimit for {#JMXVALUE}</name>
+                            <name>TempLimit for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -266,11 +338,29 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>TempPercentUsage for {#JMXVALUE}</name>
+                            <name>TempPercentUsage for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -308,11 +398,29 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>TotalConsumerCount for {#JMXVALUE}</name>
+                            <name>TotalConsumerCount for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -350,11 +458,29 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>TotalDequeueCount per minute for {#JMXVALUE}</name>
+                            <name>TotalDequeueCount per minute for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -394,18 +520,40 @@
                                 <step>
                                     <type>10</type>
                                     <params/>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                                 <step>
                                     <type>1</type>
                                     <params>60</params>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                             </preprocessing>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>TotalEnqueueCount per minute for {#JMXVALUE}</name>
+                            <name>TotalEnqueueCount per minute for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -445,18 +593,40 @@
                                 <step>
                                     <type>10</type>
                                     <params/>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                                 <step>
                                     <type>1</type>
                                     <params>60</params>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                             </preprocessing>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>TotalMessageCount per minute for {#JMXVALUE}</name>
+                            <name>TotalMessageCount per minute for {#JMXBROKERNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -496,15 +666,37 @@
                                 <step>
                                     <type>10</type>
                                     <params/>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                                 <step>
                                     <type>1</type>
                                     <params>60</params>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                             </preprocessing>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
@@ -512,7 +704,7 @@
                             <expression>{Template JMX ActiveMQ:jmx[&quot;{#JMXOBJ}&quot;,MemoryPercentUsage].last(0)}&gt;{$AMQ_BROKER_MEM_USAGE_THRESHOLD}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>MemoryPercentUsage &gt;{$AMQ_BROKER_MEM_USAGE_THRESHOLD}% for broker {#JMXVALUE}</name>
+                            <name>MemoryPercentUsage &gt;{$AMQ_BROKER_MEM_USAGE_THRESHOLD}% for broker {#JMXBROKERNAME} on {HOST.NAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -528,7 +720,7 @@
                             <expression>{Template JMX ActiveMQ:jmx[&quot;{#JMXOBJ}&quot;,StorePercentUsage].last(0)}&gt;{$AMQ_BROKER_STORE_USAGE_THRESHOLD}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>StorePercentUsage &gt;{$AMQ_BROKER_STORE_USAGE_THRESHOLD}% for broker {#JMXVALUE}</name>
+                            <name>StorePercentUsage &gt;{$AMQ_BROKER_STORE_USAGE_THRESHOLD}% for broker {#JMXBROKERNAME} on {HOST.NAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -544,7 +736,7 @@
                             <expression>{Template JMX ActiveMQ:jmx[&quot;{#JMXOBJ}&quot;,TempPercentUsage].last(0)}&gt;{$AMQ_BROKER_TMP_USAGE_THRESHOLD}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>TempPercentUsage &gt;{$AMQ_BROKER_TMP_USAGE_THRESHOLD}% for broker {#JMXVALUE}</name>
+                            <name>TempPercentUsage &gt;{$AMQ_BROKER_TMP_USAGE_THRESHOLD}% for broker {#JMXBROKERNAME} on {HOST.NAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -560,13 +752,33 @@
                     <graph_prototypes/>
                     <host_prototypes/>
                     <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <lld_macro_paths/>
+                    <preprocessing/>
+                    <master_item/>
                 </discovery_rule>
                 <discovery_rule>
-                    <name>ActiveMQ destinations</name>
+                    <name>ActiveMQ queues</name>
                     <type>16</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>jmx.discovery[beans,&quot;org.apache.activemq:type=Destination,destinationName=*&quot;]</key>
+                    <key>jmx.discovery[beans,&quot;org.apache.activemq:type=Broker,brokerName=*,destinationType=Queue,destinationName=*&quot;]</key>
                     <delay>3600</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -590,11 +802,11 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30d</lifetime>
+                    <lifetime>7d</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
-                            <name>AverageEnqueueTime for {#JMXVALUE}</name>
+                            <name>AverageEnqueueTime for {#JMXDESTINATIONNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -625,18 +837,36 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Destinations</name>
+                                    <name>Queues</name>
                                 </application>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>ConsumerCount for {#JMXVALUE}</name>
+                            <name>ConsumerCount for {#JMXDESTINATIONNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -667,18 +897,36 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Destinations</name>
+                                    <name>Queues</name>
                                 </application>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>DequeueCount per minute for {#JMXVALUE}</name>
+                            <name>DequeueCount per minute for {#JMXDESTINATIONNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -709,7 +957,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Destinations</name>
+                                    <name>Queues</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -718,18 +966,40 @@
                                 <step>
                                     <type>10</type>
                                     <params/>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                                 <step>
                                     <type>1</type>
                                     <params>60</params>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                             </preprocessing>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>EnqueueCount per minute for {#JMXVALUE}</name>
+                            <name>EnqueueCount per minute for {#JMXDESTINATIONNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -760,7 +1030,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Destinations</name>
+                                    <name>Queues</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -769,18 +1039,40 @@
                                 <step>
                                     <type>10</type>
                                     <params/>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                                 <step>
                                     <type>1</type>
                                     <params>60</params>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                             </preprocessing>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>ExpiredCount per minute for {#JMXVALUE}</name>
+                            <name>ExpiredCount per minute for {#JMXDESTINATIONNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -811,7 +1103,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Destinations</name>
+                                    <name>Queues</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -820,18 +1112,40 @@
                                 <step>
                                     <type>10</type>
                                     <params/>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                                 <step>
                                     <type>1</type>
                                     <params>60</params>
+                                    <error_handler>0</error_handler>
+                                    <error_handler_params/>
                                 </step>
                             </preprocessing>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>ProducerCount for {#JMXVALUE}</name>
+                            <name>ProducerCount for {#JMXDESTINATIONNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -862,18 +1176,36 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Destinations</name>
+                                    <name>Queues</name>
                                 </application>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
-                            <name>QueueSize for {#JMXVALUE}</name>
+                            <name>QueueSize for {#JMXDESTINATIONNAME}</name>
                             <type>16</type>
                             <snmp_community/>
                             <snmp_oid/>
@@ -904,15 +1236,33 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Destinations</name>
+                                    <name>Queues</name>
                                 </application>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
@@ -920,7 +1270,7 @@
                             <expression>{Template JMX ActiveMQ:jmx[&quot;{#JMXOBJ}&quot;,ExpiredCount].last(0)}&gt;0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Expired messages in {#JMXVALUE}!</name>
+                            <name>Expired messages in  {#JMXDESTINATIONNAME} on {HOST.NAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -936,7 +1286,7 @@
                             <expression>{Template JMX ActiveMQ:jmx[&quot;{#JMXOBJ}&quot;,QueueSize].last(0)}&gt;{$AMQ_DESTINATION_QUEUE_SIZE_THRESHOLD}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>QueueSize &gt;{$AMQ_DESTINATION_QUEUE_SIZE_THRESHOLD} for {#JMXVALUE}</name>
+                            <name>QueueSize &gt;{$AMQ_DESTINATION_QUEUE_SIZE_THRESHOLD} for  {#JMXDESTINATIONNAME} on {HOST.NAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -952,7 +1302,7 @@
                             <expression>{Template JMX ActiveMQ:jmx[&quot;{#JMXOBJ}&quot;,ConsumerCount].last(0)}&lt;{$AMQ_DESTINATION_CONSUMER_COUNT_THRESHOLD_MIN}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Too few (&lt;{$AMQ_DESTINATION_CONSUMER_COUNT_THRESHOLD_MIN}) consumers for {#JMXVALUE}</name>
+                            <name>Too few (&lt;{$AMQ_DESTINATION_CONSUMER_COUNT_THRESHOLD_MIN}) consumers for {#JMXDESTINATIONNAME} on {HOST.NAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -968,7 +1318,7 @@
                             <expression>{Template JMX ActiveMQ:jmx[&quot;{#JMXOBJ}&quot;,ProducerCount].last(0)}&lt;{$AMQ_DESTINATION_PRODUCER_COUNT_THRESHOLD_MIN}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Too few (&lt;{$AMQ_DESTINATION_PRODUCER_COUNT_THRESHOLD_MIN}) producers for {#JMXVALUE}</name>
+                            <name>Too few (&lt;{$AMQ_DESTINATION_PRODUCER_COUNT_THRESHOLD_MIN}) producers for  {#JMXDESTINATIONNAME} on {HOST.NAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -984,6 +1334,26 @@
                     <graph_prototypes/>
                     <host_prototypes/>
                     <jmx_endpoint>service:jmx:rmi:///jndi/rmi://{HOST.CONN}:{HOST.PORT}/jmxrmi</jmx_endpoint>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <lld_macro_paths/>
+                    <preprocessing/>
+                    <master_item/>
                 </discovery_rule>
             </discovery_rules>
             <httptests/>
@@ -1002,7 +1372,7 @@
                 </macro>
                 <macro>
                     <macro>{$AMQ_DESTINATION_CONSUMER_COUNT_THRESHOLD_MIN}</macro>
-                    <value>0</value>
+                    <value>1</value>
                 </macro>
                 <macro>
                     <macro>{$AMQ_DESTINATION_PRODUCER_COUNT_THRESHOLD_MIN}</macro>
@@ -1015,6 +1385,7 @@
             </macros>
             <templates/>
             <screens/>
+            <tags/>
         </template>
     </templates>
 </zabbix_export>
